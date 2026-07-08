@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -24,21 +25,34 @@
         class="picture"
       />
       <article class="container">
-        <h1>We're <span>coming soon</span></h1>
-        <p class="product-description">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
-        <div class="email-container">
-          <input type="email" placeholder="Email Address" class="email" />
-          <button>
+        <img
+          src="assets/images/logo.svg"
+          alt="Base Apparel Logo"
+          class="desktop-logo"
+        />
+        <div class="text-container">
+          <h1>We're <span>coming soon</span></h1>
+          <p class="product-description">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <div class="email-container">
+            <input type="email" placeholder="Email Address" class="email" />
             <img
-              src="assets/images/icon-arrow.svg"
-              alt="arrow icon"
-              class="arrow"
+              src="assets/images/error.png"
+              alt="error icon"
+              class="error-icon"
             />
-          </button>
+            <button class="button">
+              <img
+                src="assets/images/icon-arrow.svg"
+                alt="arrow icon"
+                class="arrow"
+              />
+            </button>
+          </div>
+          <p class="error-message">Please provide a valid email</p>
         </div>
       </article>
     </main>
